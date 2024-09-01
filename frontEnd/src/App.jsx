@@ -1,16 +1,19 @@
 // import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Home } from "./Home";
-import './App.css';
-import { Register } from "./Register";
-import { Login } from "./Login";
+import { PlataformaEstudiante } from "./components/PlataformaEstudiante";
+import './styles/App.css';
+import { Register } from "./components/Register";
+import { Login } from "./components/Login";
+import { PlataformaDocente } from "./components/PlataformaDocente";
+
 
 function App(){
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/plataformaEstudiante" element={<PlataformaEstudiante />} />
+        <Route path="/plataformaDocente" element={<PlataformaDocente />} />
         <Route path="/register" element={<Register />} />
       </Routes>
     </BrowserRouter>

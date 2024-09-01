@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
-import './styles/home.css';
+import '../styles/Home.css';
 
-export const Home = () => {
+export const PlataformaEstudiante = () => {
+  
   return (
     <div className="container">
       <nav className="navbar">
