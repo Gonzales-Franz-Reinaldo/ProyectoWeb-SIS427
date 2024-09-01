@@ -35,8 +35,6 @@ db.connect((err) => {
 app.post('/register', (req, res) => {
     const { nombre, apellido, rol, email, password, telefono, especialidad, grado, matricula, CU, carrera } = req.body;
 
-    // const fechaCreacion = new Date().toISOString().slice(0, 19).replace('T', ' ');
-    // const fechaIngreso = new Date().toISOString().slice(0, 19).replace('T', ' ');
 
     // Ajuste de zona horaria
     const timeZone = 'America/La_Paz';
@@ -116,8 +114,6 @@ app.post("/login", (req, res) => {
         }
     });
 });
-
-
 
 
 

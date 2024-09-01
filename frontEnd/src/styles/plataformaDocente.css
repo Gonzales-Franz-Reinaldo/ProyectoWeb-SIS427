@@ -18,13 +18,13 @@ body {
     color: #ecf0f1;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     padding: 20px;
     transition: width 0.3s ease;
 }
 
 .sidebar-header {
-    text-align: center;
+    /* text-align: center; */
     margin-bottom: 30px;
 }
 
@@ -43,6 +43,8 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    align-items: baseline;
 }
 
 .nav-link {
@@ -66,7 +68,7 @@ body {
 .main-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     background-color: #ecf0f1;
     padding: 20px;
     border-radius: 10px;
@@ -81,7 +83,7 @@ body {
 
 .user-info {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .user-info p {
@@ -129,4 +131,138 @@ body {
     .logout-btn {
         padding: 8px 12px;
     }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Contenedor principal */
+.tareas-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Encabezado de la sección de tareas */
+.tareas-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.tareas-header h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.add-tarea-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.add-tarea-btn:hover {
+    background-color: #45a049;
+}
+
+/* Estilos para la tabla */
+.tareas-table-container {
+    overflow-x: auto; /* Para manejar tablas grandes en dispositivos pequeños */
+}
+
+.tareas-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tareas-table th, .tareas-table td {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+.tareas-table th {
+    background-color: #f4f4f4;
+    color: #333;
+    font-weight: bold;
+}
+
+.tareas-table td {
+    border-bottom: 1px solid #ddd;
+}
+
+.tareas-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Acciones de tarea */
+.tarea-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.tarea-actions .edit-btn, .tarea-actions .delete-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.edit-btn {
+    background-color: #2196F3;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #1e88e5;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #e53935;
+}
+
+/* Tamaño y estilo de los íconos */
+.add-tarea-btn .faPlus,
+.edit-btn .faEdit,
+.delete-btn .faTrash {
+    font-size: 16px;
+}
+
+.add-tarea-btn,
+.edit-btn,
+.delete-btn {
+    font-size: 14px;
 }
